@@ -1,105 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Scott Schlimmer | Strategist & Innovator</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scott Schlimmer</title>
   <style>
     body {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
       color: #333;
-      background-color: #f9f9f9;
     }
-    header {
-      background-color: #004080;
+    .hero {
+      background: url('scott.jpg') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .hero-text {
+      position: relative;
       color: white;
-      padding: 60px 20px 30px 20px;
       text-align: center;
-    }
-    header img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid white;
-      margin-bottom: 20px;
-    }
-    h1 {
-      margin-top: 10px;
-      font-size: 32px;
-    }
-    p {
-      font-size: 18px;
-      max-width: 700px;
-      margin: 20px auto;
-      line-height: 1.5;
+      max-width: 800px;
       padding: 0 20px;
     }
-    .about {
-      text-align: center;
-      padding: 60px 20px;
+    .hero-text h1 {
+      font-size: 36px;
+      margin: 0 0 10px;
     }
-    .about img {
-      width: 300px;
-      margin-top: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    .bio {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      line-height: 1.6;
+      font-size: 18px;
+    }
+    .cia-photo {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .cia-photo img {
+      width: 90%;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     }
     .contact {
       text-align: center;
-      margin: 50px 20px;
+      padding: 40px 20px;
     }
     .contact a {
       display: inline-block;
       margin: 10px;
-      padding: 12px 24px;
+      padding: 14px 28px;
+      background-color: #005288;
       color: white;
-      background-color: #0077b5;
-      border-radius: 30px;
+      border-radius: 40px;
       text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    .contact a.email {
-      background-color: #444;
+      font-weight: 600;
+      transition: all 0.3s;
     }
     .contact a:hover {
-      background-color: #005f8d;
+      background-color: #003f66;
     }
-    .contact a.email:hover {
-      background-color: #222;
-    }
-    footer {
+    .footer {
       text-align: center;
       font-size: 14px;
-      color: #aaa;
-      padding: 20px 0;
+      color: #888;
+      padding: 20px;
+      border-top: 1px solid #eee;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <img src="scott.jpg" alt="Scott Schlimmer">
-  <h1>Strategist, innovator, and trusted advisor for complex challenges.</h1>
-</header>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Strategist, innovator, and trusted advisor for complex challenges.</h1>
+    </div>
+  </section>
 
-<section class="about">
-  <p>Drawing from years of experience at the CIA and in leadership roles across sectors, Scott Schlimmer brings a unique blend of operational insight, strategic thinking, and a deep commitment to helping teams succeed.</p>
-  <img src="CIA Seal.jpg" alt="CIA Seal">
-</section>
+  <section class="bio">
+    <p>Drawing from years of experience at the CIA and in leadership roles across sectors, Scott Schlimmer brings a unique blend of operational insight, strategic thinking, and a deep commitment to helping teams succeed.</p>
+  </section>
 
-<section class="contact">
-  <h2>Connect with Scott</h2>
-  <a href="https://www.linkedin.com/in/scottschlimmer/" target="_blank">LinkedIn</a>
-  <a href="mailto:Scott@ScottSchlimmer.com" class="email">Email Scott</a>
-</section>
+  <section class="cia-photo">
+    <img src="CIA Seal.jpg" alt="Scott at CIA">
+  </section>
 
-<footer>
-  &copy; 2025 Scott Schlimmer. All rights reserved.
-</footer>
+  <section class="contact">
+    <a href="https://www.linkedin.com/in/scottschlimmer/" target="_blank">Connect on LinkedIn</a>
+    <a href="mailto:Scott@ScottSchlimmer.com">Email Scott</a>
+  </section>
+
+  <div class="footer">
+    &copy; 2025 Scott Schlimmer. All rights reserved.
+  </div>
 
 </body>
 </html>
